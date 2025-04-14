@@ -1,7 +1,7 @@
 console.log("Hey Hallo wereld")
 //npm run dev zodat we niet opnieuw hoeven te typen
 
-import express, { request } from 'express'
+import express, { request, response } from 'express'
 import { Liquid } from 'liquidjs';
 
 const app = express()
@@ -17,7 +17,21 @@ app.set('views', './views')
 
 // MARK: Home
 app.get("/", (request, response) => {
+    // connectie met directus met een fetch
+    // query uitvoeren met het ophalen van de data
+    // data controlen en filteren
+    // bewerking uitvoeren op data
+    // data doorgeven aan template
     response.render('index.liquid')
+})
+
+// MARK: Stories
+app.get("/stories", (request, response) =>{
+    // connectie met directus met een fetch
+    // query uitvoeren met het ophalen van de data
+    // data controlen en filteren
+    // bewerking uitvoeren op data
+    // data doorgeven aan template
 })
 
 // --------------------------
