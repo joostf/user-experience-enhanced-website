@@ -1,4 +1,3 @@
-console.log("Hey Hallo wereld")
 //npm run dev zodat we niet opnieuw hoeven te typen
 
 import express, { request, response } from 'express'
@@ -34,7 +33,10 @@ app.get("/stories", (request, response) =>{
     // data doorgeven aan template
 })
 
-// --------------------------
+// --------------MARK: Test---------
+app.get("/image", (request, response) =>{
+    response.render("image.liquid")
+})
 
 app.set('port', process.env.PORT || 8000)
 app.listen(app.get('port'), function () {
