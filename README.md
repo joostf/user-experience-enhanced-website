@@ -16,7 +16,6 @@ De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/enhance
 
 ## Beschrijving
 In sprint 10 zijn wij verder gegaan met de website voor Tumi Mundo. In deze sprint zijn we begonnen met responsive images en pleasurable UX/UI.
-<!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar je live site 🌐-->
 
 ## Gebruik
