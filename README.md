@@ -33,9 +33,10 @@ Ik gebruik nu de nieuwste vorm van images op mijn website. Ik gebruik het pictur
 
 
 ## Installatie
-<!-- Bij Installatie staat hoe een andere developer aan jouw repo kan werken -->
+Installeer [Node.js](https://nodejs.org/en) en start je code bewerking programma. Druk op 'ctrl + `' en type vervolgens: 'npm init' vervolgd door 'npm start' nu heb jij je live server opgestart.
 
 ## Bronnen
+[Node.js](https://nodejs.org/en)
 
 ## Licentie
 
