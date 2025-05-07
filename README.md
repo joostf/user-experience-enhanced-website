@@ -35,8 +35,8 @@ Ik gebruik nu de nieuwste vorm van images op mijn website. Ik gebruik het pictur
 Installeer [Node.js](https://nodejs.org/en) en start je code bewerking programma. Druk op 'ctrl + `' en type vervolgens: 'npm init' vervolgd door 'npm start' nu heb jij je live server opgestart.
 
 ## Bronnen
-[Node.js](https://nodejs.org/en)
-[Responsive Images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
+* [Node.js](https://nodejs.org/en)
+* [Responsive Images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
 
 
 ## Licentie
