@@ -1,0 +1,377 @@
+:root {
+    /* Kleuren */
+    
+    /* Home Background */
+        --van-kleur-home: #3F93B7;
+        --naar-kleur-home: #1C5872;
+     
+    /* Story nightmode */
+        --van-kleur-story-nightmode: #040404;
+        --naar-kleur-story-nightmode: #471871;
+     
+    /* Menu lay-over */
+        --menu-lay-over-kleur: #292929;
+        --menu-lay-over-opacity: 95%;
+    
+    /* Menu knoppen */
+        --button-color-one: #3F92B6;
+        --hover-button-color-one: #3D7A95;
+        
+        --button-color-two: #599AE7;
+        --hover-button-color-two: #4D7EB7;
+        
+        --button-color-three: #954BE2;
+        --hover-button-color-three: #451ACF;
+        
+        --button-color-four: #06A192;
+        --hover-button-color-four: #078377;
+        
+        --button-color-five: #FD8C73;
+        --hover-button-color-five: #EA775E;
+    
+    /* Methode kleuren*/
+        --methode-background-color: ;
+        --methode-color-one: #1CB854;
+        --methode-color-two: #37C6AB;
+        --methode-color-three: #059CC0;
+        --methode-color-four: #FF8C59;
+        --methode-color-five: #FFA02E;
+    
+    /* Statistics */
+        --van-kleur-statistics: #219B9B;
+        --naar-kleur-statistics: #1B7070;
+    
+    /* Testing */
+        --van-kleur-testing: #21599B;
+        --naar-kleur-testing: #1B3D70;
+    
+    /* Profile */
+        --van-kleur-profile: #F0775D;
+        --naar-kleur-profile: ##B45751;
+    
+    /* Method */
+        --van-kleur-method: #471871;
+        --naar-kleur-method: #142151;
+    
+    /* Typografie */
+        --font-text: 'Poppins', sans-serif; 
+    
+    /* Font-sizes*/
+        --font-size-h1: 1.8rem;
+        --font-size-h2: 1.25rem;
+        --font-size-h3: 0.75rem;
+        --font-size-story-title: 0.75rem;
+        --font-size-story-description: 0.5rem;
+    
+    /* Font-weights */
+        --font-weight-h1: 600;
+        --font-weight-h2: 600;
+        --font-weight-h3: 400;
+        --font-weight-story-title: 600;
+        --font-weight-story-description: 400;
+    
+    /* Line-heights */
+        --line-height-h1: 3rem;
+        --line-height-h2: 1.375rem;
+        --line-height-h3: 1.3125rem;
+        --line-height-story-title: 0.938rem;
+        --line-height-story-description: 0.75rem;
+    
+    /* Formulier elementen */
+    }
+
+    body{
+        background-color: var(--van-kleur-method);
+        font-family: var(--font-text), Arial, Helvetica, sans-serif;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+        h1{
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-h1);
+            line-height: var(--line-height-h1);
+            color: white;
+        }
+
+        h2{
+            font-size: var(--font-size-h2);
+            font-weight: var(--font-weight-h2);
+            line-height: var(--line-height-h2);
+            color: white;
+        }
+
+        h3{
+            font-size: var(--font-size-h3);
+            font-weight: var(--font-weight-h3);
+            line-height: var(--line-height-h3);
+        }
+
+        p{
+            font-size: var(--font-size-story-title);
+            font-weight: var(--font-weight-story-title);
+            line-height: var(--line-height-story-title);
+        }
+    }
+
+    #stories{
+        background-color: white;
+        min-height:clamp(24rem, 64vw, 40rem);
+	    padding:1rem;
+
+	    display:grid;
+	    place-items:end start;
+    }
+
+    #stories input::after{
+        background-color: var(--button-color-three);
+    }
+
+    #stories input:checked::after{
+        background-color: var(--button-color-three);
+    }
+/* Sidney zijn gedeelte */
+.button-menu{
+    height: 15rem;
+    width: 37rem;
+    gap: 1rem;
+    background-color: var(--menu-lay-over-kleur);
+
+    display: flex;
+
+    button{
+        height: 6.25rem;
+        width: 6.25rem;
+    }
+
+    h2{
+        color: white;
+        text-align: center;
+    }
+}
+
+.iconen-menu{
+width: 3rem;
+filter: invert(1);
+}
+
+.testing{
+background-color: var(--button-color-two);
+transition: 0.3s;
+}
+
+.testing:hover{
+background-color: var(--hover-button-color-two);
+height: 7rem;
+width: 7rem;
+}
+
+.lessons{
+background-color: var(--button-color-three);
+transition: 0.3s;
+}
+
+.lessons:hover{
+background-color: var(--hover-button-color-three);
+height: 7rem;
+width: 7rem;
+}
+
+.home{
+background-color: var(--button-color-one);
+transition: 0.3s;
+}
+
+.home:hover{
+background-color: var(--hover-button-color-one);
+height: 7rem;
+width: 7rem;
+}
+
+.statistics{
+background-color: var(--button-color-four);
+transition: 0.3s;
+}
+
+.statistics:hover{
+background-color: var(--hover-button-color-four);
+height: 7rem;
+width: 7rem;
+}
+
+.profile{
+background-color: var(--button-color-five);
+transition: 0.3s;
+}
+
+.profile:hover{
+background-color: var(--hover-button-color-five);
+height: 7rem;
+width: 7rem;
+}
+
+/* HIer wil ik proberen om de grafiek zelf te animeren om het interactief te maken */
+.knop{
+text-align: center;
+width: 6.25rem;
+height: 6.25rem;
+}
+
+.stat-knop:hover{
+text-align: center;
+width: 6.25rem;
+height: 6.25rem;
+
+background-color: #21599B;
+}
+
+.grafiek{
+height: 6.25rem;
+width: 6.25rem;
+background-color: var(--button-color-four);
+
+display: flex;
+gap: 0.2rem;
+align-items: center;
+justify-content: center;
+}
+
+.eerste-bar{
+background-color: white;    
+width: 1rem;
+height: 2rem;
+
+position: relative;
+top: 0.5rem;
+}
+
+.tweede-bar{
+background-color: white;
+width: 1rem;
+height: 3rem;
+
+position: relative;
+top: 0rem;
+}
+
+.derde-bar{
+background-color: white;;
+width: 1rem;
+height: 1.5rem;
+
+position: relative;
+top: 0.75rem;
+
+transition: 0.3s;
+}
+
+.horizontale-bar{
+background-color: white;
+width: 0.3rem;
+height: 3.53rem;
+rotate: 90deg;
+
+position: relative;
+top: -2.9rem;
+left: 2.9rem;
+}
+
+.verticale-bar{
+background-color: red;
+width: 0.3rem;
+height: 3.53rem;
+
+position: relative;
+top: -2.9rem;
+left: 2.9rem;
+}
+
+/* Hier komt het puzzelstukje */
+.puzzelstuk{
+height: 6.25rem;
+width: 6.25rem;
+
+background-color: var(--button-color-two);
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.vierkant{
+width: 2.5rem;
+height: 2.5rem;
+
+background-image: 
+
+linear-gradient(
+    white 0 0
+);
+}
+/* 
+.cirkel-boven{
+width: 1rem;
+height: 1rem;
+border-radius: 100%;
+
+background-color: white;
+
+position: relative;
+top: -1.65rem;
+left: -0.3rem;
+}
+
+.cirkel-rechts{
+width: 1rem;
+height: 1rem;
+border-radius: 100%;
+
+background-color: white;
+
+position: relative;
+left: 0.2rem;
+}
+
+.cirkel-onder{
+width: 1rem;
+height: 1rem;
+border-radius: 100%;
+
+background-color: var(--button-color-two);
+
+position: relative;
+left: -2.3rem;
+top: 0.89rem;
+}
+
+/* hier komt het boek */
+.boek{
+height: 6.25rem;
+width: 6.25rem;
+
+background-color: var(--button-color-three);
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.kaft{
+width: 3.125rem;
+height: 2.5rem;
+
+background-color: white;
+
+position: relative;
+}
+
+.pagina-links{
+height: 2.7rem;
+width: 1.45rem;
+
+background-color: white;
+box-shadow: 0rem 0rem 0rem 0.06rem red;
+
+border-radius: 1rem 0rem 0.8rem 0rem;
+} 
