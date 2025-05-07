@@ -37,6 +37,7 @@ Installeer [Node.js](https://nodejs.org/en) en start je code bewerking programma
 ## Bronnen
 * [Node.js](https://nodejs.org/en)
 * [Responsive Images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
+* [View Transitions voor meerdere pagina's](https://daverupert.com/2023/05/getting-started-view-transitions/)
 
 
 ## Licentie
