@@ -1,0 +1,28 @@
+{% render 'partials/head.liquid' %}
+
+<main class="verhaal">
+  <h1 style="view-transition-name: morph-{{ story.id }}">{{ story.title }}</h1>
+
+  <img
+    style="view-transition-name: morph-{{ story.image }}"
+    src="https://fdnd-agency.directus.app/assets//{{ story.image }}"
+    width="{{ story.image.width }}"
+    height="{{ story.image.height }}">
+
+  <article>
+    <h2>{{ story.summary }}</h2>
+
+    <p>{{ buddy.animal }}</p>
+  </article>
+
+  <div class="audio">
+    <audio controls src="https://fdnd-agency.directus.app/assets/{{ audio.audio_file }}">
+      <track default src="https://fdnd-agency.directus.app/assets/{{ audio.transcript_file[0] }}" />
+
+    </audio>
+    <p></p>
+  {% comment %} Dit dient waar de audio als tekst wordt geladen {% endcomment %}
+  </div>
+</main>
+
+<a href="/">Terug naar verhalen</a>

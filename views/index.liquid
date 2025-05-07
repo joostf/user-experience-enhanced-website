@@ -13,8 +13,7 @@
     </form>
   </div>
 
-  <details open>
-    <summary>All Stories</summary>
+  <section>
     <div id="stories">
       {% for story in stories %}
         <ul>
@@ -34,15 +33,19 @@
         </ul>
       {% endfor %}
     </div>
-  </details>
+  </section>
 
   <div id="playlist">
-    <h2>Suggested Playlists</h2>
+    <h2>Your Playlists</h2>
     <ul id="playlists">
       {% for playlist in playlists %}
         <li>
           <h3>{{ playlist.title }}</h3>
-          <img src="https://fdnd-agency.directus.app/assets/{{ playlist.image }}">
+          <picture>
+            <source srcset="https://fdnd-agency.directus.app/assets/{{ playlist.image }}?format=avif" type="image/avif">
+            <source srcset="https://fdnd-agency.directus.app/assets/{{ playlist.image }}?format=webp" type="image/webp">
+            <img src="https://fdnd-agency.directus.app/assets/{{ playlist.image }}">
+          </picture>
           <form action="/delete/{{ playlist.id }}" method="POST">
 
             <button type="submit" name="delete">Verwijder Playlist</button>
