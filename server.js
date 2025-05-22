@@ -114,7 +114,8 @@ app.get('/stories/:id', async function (request, response) {
   // Hier render ik de verhalen en de buddies
   response.render('story.liquid', {story: storyResponseJSON.data[0], buddy: animalReponseJSON.data[0], audio: audioResponseJSON.data[0]})
 })
-app.set('port', process.env.PORT || 7000)
+app.set('port', process.env.PORT || 1337
+)
 
 app.listen(app.get('port'), function () {
   console.log(`Application started on http://localhost:${app.get('port')}`)
