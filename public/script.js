@@ -33,7 +33,7 @@ if ('fetch' in window && 'DOMParser' in window) {
 
       form.classList.remove("load-state")
 
-      //responseDOM is returned so it can be used by the updateDOM
+      //responseDOM is returned so it can be used by the updateDOM function
       return responseDOM
     }
 
